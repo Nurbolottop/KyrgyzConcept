@@ -6,8 +6,8 @@
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="jp_top_header_left_wrapper">
                     <div class="jp_top_header_left_cont">
-                        <p><i class="fa fa-phone"></i> &nbsp;Phone &nbsp;+123456789</p>
-                        <p class=""><i class="fa fa-envelope"></i> &nbsp;Email :&nbsp;<a href="#">Email@example.com</a></p>
+                        <p><i class="fa fa-phone"></i> &nbsp;Телефонный номер:  &nbsp;{{setting.phone}}</p>
+                        <p class=""><i class="fa fa-envelope"></i> &nbsp;Почта :&nbsp;<a >{{ setting.email}}</a></p>
                     </div>
                 </div>
             </div>
@@ -29,12 +29,18 @@
                     </div>
                     <div class="jp_top_header_right__social_cont">
                         <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
+                            {% if setting.tripadvisor%}
+                            <li><a href="{{setting.tripadvisor}}"><i class="fa fa-tripadvisor"></i></a></li>
+                            {% endif %}
+                            {% if setting.facebook%}
+                            <li><a href="{{setting.facebook}}"><i class="fa fa-facebook"></i></a></li>
+                            {% endif %}
+                            {% if setting.twitter%}
+                            <li><a href="{{setting.twitter}}"><i class="fa fa-twitter"></i></a></li>
+                            {% endif %}
+                            {% if setting.instagram%}
+                            <li><a href="{{setting.instagram}}"><i class="fa fa-instagram"></i></a></li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>
@@ -51,7 +57,7 @@
                 <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-xs hidden-sm full_width">
                     <div class="gc_header_wrapper">
                         <div class="gc_logo">
-                            <a href="index.html"><img src="{% static 'images/header/logo2.png' %}" alt="Logo" title="Job Pro" class="img-responsive"></a>
+                            <a href="{% url 'index' %}"><img src="{{setting.logo.url}}"  width = "100px" alt="Logo" title="Job Pro" class="img-responsive"></a>
                         </div>
                     </div>
                 </div>
@@ -73,25 +79,9 @@
                                 </ul>
                             </div>
                             <ul class="float_left">
-                                <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Home&nbsp;<i class="fa fa-angle-down"></i></a>
-                                    <!-- mega menu start -->
-                                    <ul>
-                                        <li class="parent"><a href="index.html">Home1</a></li>
-                                        <li class="parent"><a href="index_II.html">Home2</a></li>
-                                        <li class="parent"><a href="index_map.html">Home3</a></li>
-                                        <li class="parent"><a href="index_iv.html">Home4</a></li>
-                                        <li class="parent"><a href="index_v.html">Home5</a></li>
-                                        <li class="parent"><a href="index_vi.html">Home6</a></li>
-                                    </ul>
+                                <li class="has-mega gc_main_navigation"><a href="{% url 'index' %}" class="gc_main_navigation">  Главная страница<i class="fa fa-angle-down"></i></a>
                                 </li>
-                                <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Job&nbsp;<i class="fa fa-angle-down"></i></a>
-                                    <!-- mega menu start -->
-                                    <ul>
-                                        <li class="parent"><a href="listing_left.html">Listing-Left</a></li>
-                                        <li class="parent"><a href="listing_right.html">Listing-Right</a></li>
-                                        <li class="parent"><a href="listing_single.html">Listing-Single</a></li>
-
-                                    </ul>
+                                <li class="has-mega gc_main_navigation"><a href="{% url 'jobs' %}" class="gc_main_navigation">  Ваканции <i class="fa fa-angle-down"></i></a>
                                 </li>
                                 <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">candidates &nbsp;<i class="fa fa-angle-down"></i></a>
                                     <!-- sub menu start -->
@@ -106,28 +96,24 @@
                                     </ul>
                                     <!-- sub menu end -->
                                 </li>
-                                <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Pages&nbsp;<i class="fa fa-angle-down"></i></a>
+                                
+                                <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Новости <i class="fa fa-angle-down"></i></a>
+                                    
+                                </li>
+                                <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Страницы<i class="fa fa-angle-down"></i></a>
                                     <!-- mega menu start -->
                                     <ul>
-                                         <li class="parent"><a href="about.html">About-Us</a></li>
-                                        <li class="parent"><a href="404_error.html">404</a></li>
-                                        <li class="parent"><a href="add_postin.html">Add-Posting</a></li>
-                                         <li class="parent"><a href="login.html">Login</a></li>
-                                        <li class="parent"><a href="register.html">Register</a></li>
-                                        <li class="parent"><a href="pricing.html">Pricing</a></li>
+                                         <li class="parent"><a href="{% url 'about' %}">О нас</a></li>
+                                        <li class="parent"><a href="{% url 'contact' %}">Контакты</a></li>
+                                        {% if user.is_authenticated %}
+                                         <li class="parent"><a href="{% url 'profile' request.user.id %}">Профиль</a></li>
+                                        <li class="parent"><a href="{% url 'logout' %}">Выйти</a></li>
+                                        {% else %}
+                                         <li class="parent"><a href="{% url 'login' %}">Войти</a></li>
+                                        <li class="parent"><a href="{% url 'register' %}">Регистрация</a></li>
+                                        {% endif %}
                                     </ul>
                                 </li>
-                                <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Blog&nbsp;<i class="fa fa-angle-down"></i></a>
-                                    <!-- mega menu start -->
-                                    <ul>
-                                        <li class="parent"><a href="blog_left.html">Blog-Left</a></li>
-                                        <li class="parent"><a href="blog_right.html">Blog-Right</a></li>
-                                        <li class="parent"><a href="blog_single_left.html">Blog-Single-Left</a></li>
-                                        <li class="parent"><a href="blog_single_right.html">Blog-Single-Right</a></li>
-
-                                    </ul>
-                                </li>
-                                <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contact</a></li>
                             </ul>
                         </div>
                         <!-- mainmenu end -->

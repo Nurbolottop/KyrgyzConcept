@@ -15,7 +15,7 @@ Purchase:
 
 <head>
     <meta charset="utf-8" />
-    <title>Job Pro Responsive HTML Template</title>
+    <title>{{setting.title}} - {{setting.descriptions}}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <meta name="description" content="Job Pro" />
     <meta name="keywords" content="Job Pro" />
@@ -33,7 +33,7 @@ Purchase:
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}" />
     <!-- favicon links -->
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/header/favicon.ico' %}" />
+    <link rel="shortcut icon" type="image/png" href="{{setting.logo.url}}" />
 </head>
 
 <body>

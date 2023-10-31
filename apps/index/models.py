@@ -25,16 +25,16 @@ class Settings(models.Model):
         max_length=255,
         verbose_name='Адрес'
     )
-    whatsapp = models.URLField(
-        verbose_name='Whatspp URL',
+    tripadvisor = models.URLField(
+        verbose_name='Tripadvisor URL',
         blank=True, null=True
     )
     instagram = models.URLField(
         verbose_name='Instagram URL',
         blank=True, null=True
     )
-    youtube = models.URLField(
-        verbose_name='Youtube URL',
+    twitter = models.URLField(
+        verbose_name='Twitter URL',
         blank=True, null=True
     )
     facebook = models.URLField(

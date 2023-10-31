@@ -30,10 +30,10 @@
                                 </ul>
                             </div>
                              <ul class="float_left">
-                                <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Home&nbsp;<i class="fa fa-angle-down"></i></a>
+                                <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Главная страница&nbsp;<i class="fa fa-angle-down"></i></a>
                                     <!-- mega menu start -->
                                     <ul>
-                                        <li class="parent"><a href="index.html">Home1</a></li>
+                                        <li class="parent"><a href="index.html">L</a></li>
                                         <li class="parent"><a href="index_II.html">Home2</a></li>
                                         <li class="parent"><a href="index_map.html">Home3</a></li>
                                         <li class="parent"><a href="index_iv.html">Home4</a></li>
@@ -84,9 +84,11 @@
 
                                     </ul>
                                 </li>
-                                <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Ваканции</a></li>
+                                <li class="gc_main_navigation parent"><a href="{% url 'about' %}" class="gc_main_navigation">О нас</a></li>
 
-                                <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contact</a></li>
+                                <li class="gc_main_navigation parent"><a href="{% url 'jobs' %}" class="gc_main_navigation">Ваканции</a></li>
+
+                                <li class="gc_main_navigation parent"><a href="{% url 'contact' %}" class="gc_main_navigation">Контакты</a></li>
                             </ul>
                         </div>
                         <!-- mainmenu end -->
@@ -220,7 +222,7 @@
                                                         <a href="contact.html">Ваканции</a>
                                                     </li>
                                                     <li>
-                                                        <a href="contact.html">Contact</a>
+                                                        <a href="{% url 'contact' %}">Контакты</a>
                                                     </li>
                                                     <li>
                                                         <a href="register.html">Sign Up</a>

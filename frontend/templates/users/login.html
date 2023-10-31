@@ -13,14 +13,13 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="jp_tittle_heading_wrapper">
                         <div class="jp_tittle_heading">
-                            <h2>Login</h2>
+                            <h2>Войти</h2>
                         </div>
                         <div class="jp_tittle_breadcrumb_main_wrapper">
                             <div class="jp_tittle_breadcrumb_wrapper">
                                 <ul>
-                                    <li><a href="#">Home</a> <i class="fa fa-angle-right"></i></li>
-                                    <li><a href="#">Pages</a> <i class="fa fa-angle-right"></i></li>
-                                    <li>Login</li>
+                                    <li><a href="{% url 'index' %}">Главная страница </a> <i class="fa fa-angle-right"></i></li>
+                                    <li>Войти</li>
                                 </ul>
                             </div>
                         </div>
@@ -41,14 +40,14 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <!-- login_wrapper -->
-                            <h1>LOGIN TO YOUR ACCOUNT</h1>
+                            <h1>ВОЙДИТЕ В СВОЙ АККАУНТ</h1>
                             <div class="login_wrapper">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
-                                        <a href="#" class="btn btn-primary"> <span>Login with Facebook</span> <i class="fa fa-facebook"></i> </a>
+                                        <a href="#" class="btn btn-primary"> <span>Войти с Facebook</span> <i class="fa fa-facebook"></i> </a>
                                     </div>
                                     <div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
-                                        <a href="#" class="btn btn-primary google-plus"> Login  with Google <i class="fa fa-google-plus"></i> </a>
+                                        <a href="#" class="btn btn-primary google-plus"> Войти с  Google <i class="fa fa-google-plus"></i> </a>
                                     </div>
                                 </div>
                                 <h2>or</h2>
@@ -63,22 +62,22 @@
                                     </div>
                                 </div>
                                 <div class="login_remember_box">
-                                    <label class="control control--checkbox">Remember me
+                                    <label class="control control--checkbox">Запомнить меня     
                                         <input type="checkbox">
                                         <span class="control__indicator"></span>
                                     </label>
-                                    <a href="#" class="forget_password">
-                                        Forgot Password
+                                    <a href="{% url 'password_reset' %}" class="forget_password">
+                                        Забыли пароль
                                     </a>
                                 </div>
                                 <div class="login_btn_wrapper">
                                     <button  class="btn btn-primary login_btn"> Войти </button>
                                 </div>
                                 <div class="login_message">
-                                    <p>Don’t have an account ? <a href="#"> Register Now </a> </p>
+                                    <p>У вас нет учетной записи? <a href="#"> Зарегистрироваться </a> </p>
                                 </div>
                             </div>
-                            <p>In case you are using a public/shared computer we recommend thatyou logout to prevent any un-authorized access to your account</p>
+                            <p>Если вы используете общедоступный компьютер, мы рекомендуем вам выйти из системы, чтобы предотвратить несанкционированный доступ к вашей учетной записи.</p>
                             <!-- /.login_wrapper-->
                         </div>
                     </div>
