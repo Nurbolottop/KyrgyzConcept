@@ -37,6 +37,21 @@ class Jobs(models.Model):
     descriptions = models.TextField(
         verbose_name="Описание ваканции"
     )
+    money = models.CharField(
+        max_length=255,
+        verbose_name="Зарплата",
+        blank=True,null=True
+    )
+    work = models.CharField(
+        max_length=255,
+        verbose_name="Должность",
+        blank=True,null=True
+    )
+    oclock = models.CharField(
+        max_length=255,
+        verbose_name="Часы работы",
+        blank=True,null=True
+    )
     responsiblities = RichTextField(
         verbose_name="Обязанности",
     )

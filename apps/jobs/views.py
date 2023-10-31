@@ -13,7 +13,9 @@ def jobs_all(request):
 def jobs_detail(request, id):
     setting = Settings.objects.latest('id')
     jobs = Jobs.objects.get(id=id)
-    return render(request, 'jobs/company_listing_single.html', locals())
+    jobs_category = Jobs.objects.filter(category=jobs.category).order_by('category')
+
+    return render(request, 'jobs/listing_single.html', locals())
 
 
 # CV

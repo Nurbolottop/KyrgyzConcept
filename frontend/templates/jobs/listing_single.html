@@ -1,335 +1,7 @@
-<!DOCTYPE html>
-<!-- 
-Template Name: Job Pro
-Version: 1.0.0
-Author: 
-Website: 
-Purchase: 
--->
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
+{% extends 'include/homepage.html'%}
+{% load static %}
+{% block content %}
 
-<head>
-    <meta charset="utf-8" />
-    <title>Listing_single</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <meta name="description" content="Job Pro" />
-    <meta name="keywords" content="Job Pro" />
-    <meta name="author" content="" />
-    <meta name="MobileOptimized" content="320" />
-    <!--srart theme style -->
-    <link rel="stylesheet" type="text/css" href="css/animate.css" />
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
-    <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" />
-    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" />
-    <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
-    <link rel="stylesheet" type="text/css" href="css/style_II.css" />
-    <link rel="stylesheet" type="text/css" href="css/responsive2.css" />
-    <!-- favicon links -->
-    <link rel="shortcut icon" type="image/png" href="images/header/favicon.ico" />
-</head>
-
-<body>
-    <!-- preloader Start -->
-    <div id="preloader">
-        <div id="status"><img src="images/header/loadinganimation.gif" id="preloader_image" alt="loader">
-        </div>
-    </div>
-    <!-- Top Scroll End -->
-    <!-- Top Header Wrapper Start -->
-    <div class="jp_top_header_main_wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="jp_top_header_left_wrapper">
-                        <div class="jp_top_header_left_cont">
-                            <p><i class="fa fa-phone"></i> &nbsp;Phone &nbsp;+123456789</p>
-                            <p class=""><i class="fa fa-envelope"></i> &nbsp;Email :&nbsp;<a href="#">Email@example.com</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="jp_top_header_right_wrapper">
-                        <div class="jp_top_header_right_cont">
-                            <ul>
-                                <li><a href="register.html"><i class="fa fa-user"></i>&nbsp; SIGN UP</a></li>
-                                <li><a href="login.html"><i class="fa fa-sign-in"></i>&nbsp; LOGIN</a></li>
-                            </ul>
-                        </div>
-                        <div class="jp_top_header_right__social_cont">
-                            <ul>
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Top Header Wrapper End -->
-    <!-- Header Wrapper Start -->
-    <div class="jp_top_header_img_wrapper">
-        <div class="gc_main_menu_wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-xs hidden-sm full_width">
-                        <div class="gc_header_wrapper">
-                            <div class="gc_logo">
-                                <a href="index.html"><img src="images/header/logo2.png" alt="Logo" title="Job Pro" class="img-responsive"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 full_width">
-                        <div class="header-area hidden-menu-bar stick" id="sticker">
-                            <!-- mainmenu start -->
-                            <div class="mainmenu">
-                                <div class="gc_right_menu">
-                                    <ul>
-                                        <li id="search_button">
-                                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_3" x="0px" y="0px" viewBox="0 0 451 451" style="enable-background:new 0 0 451 451;" xml:space="preserve"><g><path id="search" d="M447.05,428l-109.6-109.6c29.4-33.8,47.2-77.9,47.2-126.1C384.65,86.2,298.35,0,192.35,0C86.25,0,0.05,86.3,0.05,192.3   s86.3,192.3,192.3,192.3c48.2,0,92.3-17.8,126.1-47.2L428.05,447c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4   C452.25,441.8,452.25,433.2,447.05,428z M26.95,192.3c0-91.2,74.2-165.3,165.3-165.3c91.2,0,165.3,74.2,165.3,165.3   s-74.1,165.4-165.3,165.4C101.15,357.7,26.95,283.5,26.95,192.3z" fill="#23c0e9"/></g></svg>
-                                        </li>
-                                        <li>
-                                            <div id="search_open" class="gc_search_box">
-                                                <input type="text" placeholder="Search here">
-                                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <ul class="float_left">
-                                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Home&nbsp;<i class="fa fa-angle-down"></i></a>
-                                        <!-- mega menu start -->
-                                        <ul>
-                                            <li class="parent"><a href="index.html">Home1</a></li>
-                                            <li class="parent"><a href="index_II.html">Home2</a></li>
-                                            <li class="parent"><a href="index_map.html">Home3</a></li>
-                                            <li class="parent"><a href="index_iv.html">Home4</a></li>
-                                            <li class="parent"><a href="index_v.html">Home5</a></li>
-                                            <li class="parent"><a href="index_vi.html">Home6</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Job&nbsp;<i class="fa fa-angle-down"></i></a>
-                                        <!-- mega menu start -->
-                                        <ul>
-                                            <li class="parent"><a href="listing_left.html">Listing-Left</a></li>
-                                            <li class="parent"><a href="listing_right.html">Listing-Right</a></li>
-                                            <li class="parent"><a href="listing_single.html">Listing-Single</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li class="parent gc_main_navigation"><a href="#" class="gc_main_navigation">candidates &nbsp;<i class="fa fa-angle-down"></i></a>
-                                        <!-- sub menu start -->
-                                        <ul>
-                                           
-                                            <li class="parent"><a href="company_listing.html">Company-Listing</a></li>
-                                            <li class="parent"><a href="company_listing_single.html">Company-Single</a></li>
-                                            <li class="parent"><a href="candidate_listing.html">candidate-Listing</a></li>
-                                            <li class="parent"><a href="candidate_profile.html">candidate-Profile</a></li>
-                                           
-                                               
-                                        </ul>
-                                        <!-- sub menu end -->
-                                    </li>
-									<li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Pages&nbsp;<i class="fa fa-angle-down"></i></a>
-                                        <!-- mega menu start -->
-                                        <ul>
-                                             <li class="parent"><a href="about.html">About-Us</a></li>
-                                            <li class="parent"><a href="404_error.html">404</a></li>
-                                            <li class="parent"><a href="add_postin.html">Add-Posting</a></li>
-											 <li class="parent"><a href="login.html">Login</a></li>
-                                            <li class="parent"><a href="register.html">Register</a></li>
-                                            <li class="parent"><a href="pricing.html">Pricing</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="has-mega gc_main_navigation"><a href="#" class="gc_main_navigation">  Blog&nbsp;<i class="fa fa-angle-down"></i></a>
-                                        <!-- mega menu start -->
-                                        <ul>
-                                            <li class="parent"><a href="blog_left.html">Blog-Left</a></li>
-                                            <li class="parent"><a href="blog_right.html">Blog-Right</a></li>
-                                            <li class="parent"><a href="blog_single_left.html">Blog-Single-Left</a></li>
-                                            <li class="parent"><a href="blog_single_right.html">Blog-Single-Right</a></li>
-
-                                        </ul>
-                                    </li>
-                                    <li class="gc_main_navigation parent"><a href="contact.html" class="gc_main_navigation">Contact</a></li>
-                                </ul>
-                            </div>
-                            <!-- mainmenu end -->
-                            <!-- mobile menu area start -->
-                            <header class="mobail_menu">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-xs-6 col-sm-6">
-                                            <div class="gc_logo">
-                                                <a href="index.html"><img src="images/header/logo2.png" alt="Logo" title="Grace Church"></a>
-                                            </div>
-                                        </div>
-                                        <div class="col-xs-6 col-sm-6">
-                                            <div class="cd-dropdown-wrapper">
-                                                <a class="house_toggle" href="#0">
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.177 31.177" style="enable-background:new 0 0 31.177 31.177;" xml:space="preserve" width="25px" height="25px"><g><g><path class="menubar" d="M30.23,1.775H0.946c-0.489,0-0.887-0.398-0.887-0.888S0.457,0,0.946,0H30.23    c0.49,0,0.888,0.398,0.888,0.888S30.72,1.775,30.23,1.775z" fill="#000000"/></g><g><path class="menubar" d="M30.23,9.126H12.069c-0.49,0-0.888-0.398-0.888-0.888c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,8.729,30.72,9.126,30.23,9.126z" fill="#000000"/></g><g><path class="menubar" d="M30.23,16.477H0.946c-0.489,0-0.887-0.398-0.887-0.888c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,16.079,30.72,16.477,30.23,16.477z" fill="#000000"/></g><g><path class="menubar" d="M30.23,23.826H12.069c-0.49,0-0.888-0.396-0.888-0.887c0-0.49,0.398-0.888,0.888-0.888H30.23    c0.49,0,0.888,0.397,0.888,0.888C31.118,23.43,30.72,23.826,30.23,23.826z" fill="#000000"/></g><g><path class="menubar" d="M30.23,31.177H0.946c-0.489,0-0.887-0.396-0.887-0.887c0-0.49,0.398-0.888,0.887-0.888H30.23    c0.49,0,0.888,0.398,0.888,0.888C31.118,30.78,30.72,31.177,30.23,31.177z" fill="#000000"/></g></g></svg>
-													</a>
-                                                <nav class="cd-dropdown">
-                                                    <h2><a href="#">Job<span>Pro</span></a></h2>
-                                                    <a href="#0" class="cd-close">Close</a>
-                                                    <ul class="cd-dropdown-content">
-                                                        <li>
-                                                            <form class="cd-search">
-                                                                <input type="search" placeholder="Search...">
-                                                            </form>
-                                                        </li>
-                                                        <li class="has-children">
-                                                            <a href="#">Home</a>
-
-                                                            <ul class="cd-secondary-dropdown is-hidden">
-                                                                <li class="go-back"><a href="#0">Menu</a></li>
-                                                                <li><a href="index.html">Home1</a></li>
-																<li><a href="index_II.html">Home2</a></li>
-																<li><a href="index_map.html">Home3</a></li>
-																<li><a href="index_iv.html">Home4</a></li>
-																<li><a href="index_v.html">Home5</a></li>
-																<li><a href="index_vi.html">Home6</a></li>
-                                                                <!-- .has-children -->
-
-                                                            </ul>
-                                                            <!-- .cd-secondary-dropdown -->
-                                                        </li>
-                                                        <!-- .has-children -->
-
-
-                                                        <li class="has-children">
-                                                            <a href="#">Listing</a>
-
-                                                            <ul class="cd-secondary-dropdown is-hidden">
-                                                                <li class="go-back"><a href="#0">Menu</a></li>
-                                                                <li>
-                                                                    <a href="listing_left.html">listing-Left</a>
-                                                                </li>
-                                                                <!-- .has-children -->
-
-                                                                <li>
-                                                                    <a href="listing_right.html">listing-Right</a>
-                                                                </li>
-                                                                <!-- .has-children -->
-
-                                                                <li>
-                                                                    <a href="listing_single.html">listing-Single</a>
-                                                                </li>
-                                                                <!-- .has-children -->
-
-                                                            </ul>
-                                                            <!-- .cd-secondary-dropdown -->
-                                                        </li>
-                                                        <!-- .has-children -->
-                                                        <li class="has-children">
-                                                            <a href="#">candidates</a>
-
-                                                            <ul class="cd-secondary-dropdown is-hidden">
-                                                                <li class="go-back"><a href="#0">Menu</a></li>
-																<li><a href="company_listing.html">Company-Listing</a></li>
-																<li><a href="company_listing_single.html">Company-Single</a></li>
-																<li><a href="candidate_listing.html">candidate-Listing</a></li>
-																<li><a href="candidate_profile.html">candidate-Profile</a></li>
-                                                                <!-- .has-children -->
-
-                                                            </ul>
-                                                            <!-- .cd-secondary-dropdown -->
-                                                        </li>
-														<li class="has-children">
-                                                            <a href="#">Pages</a>
-
-                                                            <ul class="cd-secondary-dropdown is-hidden">
-                                                                <li class="go-back"><a href="#0">Menu</a></li>
-                                                                <li><a href="about.html">About-Us</a></li>
-																<li><a href="404_error.html">404</a></li>
-																<li><a href="add_postin.html">Add-Posting</a></li>
-																<li><a href="login.html">Login</a></li>
-																<li><a href="register.html">Register</a></li>
-																<li><a href="pricing.html">Pricing</a></li>
-                                                                <!-- .has-children -->
-
-                                                            </ul>
-                                                            <!-- .cd-secondary-dropdown -->
-                                                        </li>
-                                                        <!-- .has-children -->
-                                                        <li class="has-children">
-                                                            <a href="#">Blog</a>
-
-                                                            <ul class="cd-secondary-dropdown is-hidden">
-                                                                <li class="go-back"><a href="#0">Menu</a></li>
-                                                                <li>
-                                                                    <a href="blog_left.html">Blog-Left</a>
-                                                                </li>
-                                                                <!-- .has-children -->
-
-                                                                <li>
-                                                                    <a href="blog_right.html">Blog-Right</a>
-                                                                </li>
-                                                                <!-- .has-children -->
-
-                                                                <li>
-                                                                    <a href="blog_single_left.html">Blog-Single-Left</a>
-                                                                </li>
-                                                                <!-- .has-children -->
-
-                                                                <li>
-                                                                    <a href="blog_single_right.html">Blog-Single-Left</a>
-                                                                </li>
-                                                                <!-- .has-children -->
-
-                                                            </ul>
-                                                            <!-- .cd-secondary-dropdown -->
-                                                        </li>
-                                                        <!-- .has-children -->
-                                                        <li>
-                                                            <a href="contact.html">Contact</a>
-                                                        </li>
-														<li>
-                                                            <a href="register.html">Sign Up</a>
-                                                        </li>
-														<li>
-                                                            <a href="login.html">Login</a>
-                                                        </li>
-
-                                                    </ul>
-                                                    <!-- .cd-dropdown-content -->
-
-
-
-                                                </nav>
-                                                <!-- .cd-dropdown -->
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- .cd-dropdown-wrapper -->
-                            </header>
-                        </div>
-                    </div>
-                    <!-- mobile menu area end -->
-                    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 hidden-sm hidden-xs">
-                        <div class="jp_navi_right_btn_wrapper">
-                            <ul>
-                                <li><a href="add_postin.html"><i class="fa fa-plus-circle"></i>&nbsp; Post a job</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <!-- Header Wrapper End -->
     <!-- jp Tittle Wrapper Start -->
     <div class="jp_tittle_main_wrapper">
@@ -339,15 +11,14 @@ Purchase:
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="jp_tittle_heading_wrapper">
                         <div class="jp_tittle_heading">
-                            <h2>HTML Developer (1-2 Yrs Exp.)</h2>
+                            <h2>{{jobs.title}}</h2>
                         </div>
                         <div class="jp_tittle_breadcrumb_main_wrapper">
                             <div class="jp_tittle_breadcrumb_wrapper">
                                 <ul>
-                                    <li><a href="#">Home</a> <i class="fa fa-angle-right"></i></li>
-                                    <li><a href="#">Jobs</a> <i class="fa fa-angle-right"></i></li>
-                                    <li><a href="#">Developer</a> <i class="fa fa-angle-right"></i></li>
-                                    <li>HTML Developer (1-2 Yrs Exp.)</li>
+                                    <li><a href="{% url 'index' %}">Главная страница </a> <i class="fa fa-angle-right"></i></li>
+                                    <li><a href="{% url 'jobs' %}">Ваканции</a> <i class="fa fa-angle-right"></i></li>
+                                    <li>{{jobs.title}}</li>
                                 </ul>
                             </div>
                         </div>
@@ -364,45 +35,27 @@ Purchase:
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
                     <div class="jp_listing_left_sidebar_wrapper">
                         <div class="jp_job_des">
-                            <h2>Job Description</h2>
-                            <p>Google is and always will be an engineering company. We hire people with a broad set of ical skills who are ready to tackle some of technology's greatest challenges and make an impact on millions, if not billions, of users.
-                                At Google, engineers not only revolutionize search, they routinely work on massive scalability and storage solutions, large-scale applications and rely new platforms for developers around the world. From AdWords to Chrome,
-                                Android to Ye, Social to Local, Google engineers are changing the world.</p>
-                            <ul>
+                            <h2>ОПИСАНИЕ </h2>
+                            <p>{{jobs.descriptions}}</p>
+                            {% comment %} <ul>
                                 <li><i class="fa fa-globe"></i>&nbsp;&nbsp; <a href="#">www.example.com</a></li>
                                 <li><i class="fa fa-file-pdf-o"></i>&nbsp;&nbsp; <a href="#">Download Info</a></li>
 
-                            </ul>
+                            </ul> {% endcomment %}
                         </div>
                         <div class="jp_job_res">
-                            <h2>Responsibilities</h2>
-                            <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id
-                                dui posuere blandit.</p>
+                            <h2>ОБЯЗАННОСТИ</h2>
                             <ul>
-                                <li><i class="fa fa-caret-right"></i>&nbsp;&nbsp; Build next-generation web applications with a focus on the client side.</li>
-                                <li><i class="fa fa-caret-right"></i>&nbsp;&nbsp; Redesign UI's, implement new UI's, and pick up Java as necessary.</li>
-                                <li><i class="fa fa-caret-right"></i>&nbsp;&nbsp; Explore and design dynamic and compelling consumer experiences.</li>
-                                <li><i class="fa fa-caret-right"></i>&nbsp;&nbsp; Design and build scalable framework for web applications.</li>
+                                <li><i class="fa fa-caret-right"></i>{{jobs.responsiblities|safe}}</li>
                             </ul>
                         </div>
                         <div class="jp_job_res jp_job_qua">
-                            <h2>Minimum qualifications</h2>
+                            <h2>Ожидания</h2>
                             <ul>
-                                <li><i class="fa fa-caret-right"></i>&nbsp;&nbsp; BA/BS degree in a technical field or equivalent practical experience.</li>
-                                <li><i class="fa fa-caret-right"></i>&nbsp;&nbsp; 2 years of relevant work experience in software development.</li>
-                                <li><i class="fa fa-caret-right"></i>&nbsp;&nbsp; Programming experience in C, C++ or Java.</li>
-                                <li><i class="fa fa-caret-right"></i>&nbsp;&nbsp; Experience with AJAX, HTML and CSS.</li>
+                                <li><i class="fa fa-caret-right"></i>{{jobs.expectations|safe}}</li>
                             </ul>
                         </div>
-                        <div class="jp_job_apply">
-                            <h2>How To Apply</h2>
-                            <p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur aliquet quam id dui posuere blandit. Curabitur aliquet quam id dui posuere blandit. Curabitur non nulla sit amet nisl tempus convallis quis ac
-                                lectus.</p>
-                        </div>
-                        <div class="jp_job_map">
-                            <h2>Loacation</h2>
-                            <div id="map" style="width:100%; float:left; height:300px;"></div>
-                        </div>
+
                     </div>
                     <div class="jp_listing_left_bottom_sidebar_wrapper">
                         <div class="jp_listing_left_bottom_sidebar_social_wrapper">
@@ -417,37 +70,35 @@ Purchase:
                             </ul>
                         </div>
                     </div>
-                    <div class="jp_listing_left_bottom_sidebar_key_wrapper">
-                        <ul>
-                            <li><i class="fa fa-tags"></i>Keywords :</li>
-                            <li><a href="#">ui designer,</a></li>
-                            <li><a href="#">developer,</a></li>
-                            <li><a href="#">senior</a></li>
-                            <li><a href="#">it company,</a></li>
-                            <li><a href="#">design,</a></li>
-                            <li><a href="#">call center</a></li>
-                        </ul>
-                    </div>
                     <div class="jp_listing_related_heading_wrapper">
-                        <h2>Related Jobs</h2>
+                        <h2>ПОХОЖИЕ ВАКАНСИИ</h2>
                         <div class="jp_listing_related_slider_wrapper">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="row">
+                                        {%for jobs in jobs_category%}
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="jp_job_post_main_wrapper_cont jp_job_post_grid_main_wrapper_cont">
                                                 <div class="jp_job_post_main_wrapper">
                                                     <div class="row">
                                                         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                                                             <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img1.jpg" alt="post_img" />
+                                                                <img src="{{jobs.image.url}}" alt="post_img" />
                                                             </div>
                                                             <div class="jp_job_post_right_cont">
-                                                                <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
-                                                                <p>Webstrot Technology Pvt. Ltd.</p>
+                                                                <h4>{{jobs.title}}</h4>
+                                                                <p>{{jobs.category}}</p>
                                                                 <ul>
-                                                                    <li><i class="fa fa-cc-paypal"></i>&nbsp; $12K - 15k P.A.</li>
-                                                                    <li><i class="fa fa-map-marker"></i>&nbsp; Caliphonia, PO 455001</li>
+                                                                    {% if jobs.money%}
+                                                                    <li><i class="fa fa-cc-paypal"></i>&nbsp; {{jobs.money}}</li>
+                                                                    {% else %}
+                                                                    <li><i class="fa fa-cc-paypal"></i>&nbsp; Неизвестно</li>
+                                                                    {% endif %}
+                                                                    {% if jobs.money%}
+                                                                    <li><i class="fa fa-map-marker"></i>&nbsp; {{jobs.address}}</li>
+                                                                    {% else %}
+                                                                    <li><i class="fa fa-map-marker"></i>&nbsp; Неизвестно</li>
+                                                                    {% endif %}
                                                                 </ul>
                                                             </div>
                                                         </div>
@@ -475,88 +126,7 @@ Purchase:
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="jp_job_post_main_wrapper_cont jp_job_post_grid_main_wrapper_cont">
-                                                <div class="jp_job_post_main_wrapper">
-                                                    <div class="row">
-                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                            <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img2.jpg" alt="post_img" />
-                                                            </div>
-                                                            <div class="jp_job_post_right_cont">
-                                                                <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
-                                                                <p>Webstrot Technology Pvt. Ltd.</p>
-                                                                <ul>
-                                                                    <li><i class="fa fa-cc-paypal"></i>&nbsp; $12K - 15k P.A.</li>
-                                                                    <li><i class="fa fa-map-marker"></i>&nbsp; Caliphonia, PO 455001</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                            <div class="jp_job_post_right_btn_wrapper">
-                                                                <ul>
-                                                                    <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                    <li><a href="#">Part Time</a></li>
-                                                                    <li><a href="#">Apply</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="jp_job_post_keyword_wrapper">
-                                                    <ul>
-                                                        <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                        <li><a href="#">ui designer,</a></li>
-                                                        <li><a href="#">developer,</a></li>
-                                                        <li><a href="#">senior</a></li>
-                                                        <li><a href="#">it company,</a></li>
-                                                        <li><a href="#">design,</a></li>
-                                                        <li><a href="#">call center</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="jp_job_post_main_wrapper_cont jp_job_post_grid_main_wrapper_cont">
-                                                <div class="jp_job_post_main_wrapper">
-                                                    <div class="row">
-                                                        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-                                                            <div class="jp_job_post_side_img">
-                                                                <img src="images/content/job_post_img3.jpg" alt="post_img" />
-                                                            </div>
-                                                            <div class="jp_job_post_right_cont">
-                                                                <h4>HTML Developer (1 - 2 Yrs Exp.)</h4>
-                                                                <p>Webstrot Technology Pvt. Ltd.</p>
-                                                                <ul>
-                                                                    <li><i class="fa fa-cc-paypal"></i>&nbsp; $12K - 15k P.A.</li>
-                                                                    <li><i class="fa fa-map-marker"></i>&nbsp; Caliphonia, PO 455001</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                                            <div class="jp_job_post_right_btn_wrapper">
-                                                                <ul>
-                                                                    <li><a href="#"><i class="fa fa-heart-o"></i></a></li>
-                                                                    <li><a href="#">Part Time</a></li>
-                                                                    <li><a href="#">Apply</a></li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="jp_job_post_keyword_wrapper">
-                                                    <ul>
-                                                        <li><i class="fa fa-tags"></i>Keywords :</li>
-                                                        <li><a href="#">ui designer,</a></li>
-                                                        <li><a href="#">developer,</a></li>
-                                                        <li><a href="#">senior</a></li>
-                                                        <li><a href="#">it company,</a></li>
-                                                        <li><a href="#">design,</a></li>
-                                                        <li><a href="#">call center</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        {% endfor %}
                                     </div>
                                 </div>
                                 <div class="item">
@@ -850,8 +420,8 @@ Purchase:
                                         </div>
                                         <div class="jp_listing_list_icon_cont_wrapper">
                                             <ul>
-                                                <li>Date Posted:</li>
-                                                <li>Octomber 02, 2017</li>
+                                                <li>Дата Отправки:</li>
+                                                <li>{{jobs.created_at}}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -861,8 +431,12 @@ Purchase:
                                         </div>
                                         <div class="jp_listing_list_icon_cont_wrapper">
                                             <ul>
-                                                <li>Location:</li>
-                                                <li>Los Angeles Califonia PO, 455001</li>
+                                                <li>Расположение:</li>
+                                                {% if jobs.address %}
+                                                <li>{{jobs.address}}</li>
+                                                {% else %}
+                                                <li>Неизвестно</li>
+                                                {% endif %}
                                             </ul>
                                         </div>
                                     </div>
@@ -872,8 +446,12 @@ Purchase:
                                         </div>
                                         <div class="jp_listing_list_icon_cont_wrapper">
                                             <ul>
-                                                <li>Job Title:</li>
-                                                <li>HTML Developer</li>
+                                                <li>Должность:</li>
+                                                {% if jobs.work%}
+                                                <li>{{jobs.work }}</li>
+                                                {% else %}
+                                                <li>{{jobs.title }}</li>
+                                                {% endif %}
                                             </ul>
                                         </div>
                                     </div>
@@ -883,8 +461,12 @@ Purchase:
                                         </div>
                                         <div class="jp_listing_list_icon_cont_wrapper">
                                             <ul>
-                                                <li>Hours:</li>
-                                                <li>40h / Week</li>
+                                                <li>Часы работы:</li> 
+                                                {% if jobs.oclock %}
+                                                <li>{{jobs.oclock}}</li>
+                                                {% else %}
+                                                <li>Неизвестно</li>
+                                                {% endif %}
                                             </ul>
                                         </div>
                                     </div>
@@ -894,8 +476,12 @@ Purchase:
                                         </div>
                                         <div class="jp_listing_list_icon_cont_wrapper">
                                             <ul>
-                                                <li>Salary:</li>
-                                                <li>$12K - 15k P.A.</li>
+                                                <li>Зарплата::</li>
+                                                {% if jobs.money %}
+                                                <li>{{jobs.money}}</li>
+                                                {% else %}
+                                                <li>Неизвестно</li>
+                                                {% endif %}
                                             </ul>
                                         </div>
                                     </div>
@@ -905,8 +491,8 @@ Purchase:
                                         </div>
                                         <div class="jp_listing_list_icon_cont_wrapper">
                                             <ul>
-                                                <li>Category:</li>
-                                                <li>Developer</li>
+                                                <li>Категория::</li>
+                                                <li>{{jobs.category}}</li>
                                             </ul>
                                         </div>
                                     </div>
@@ -916,16 +502,20 @@ Purchase:
                                         </div>
                                         <div class="jp_listing_list_icon_cont_wrapper">
                                             <ul>
-                                                <li>Experience:</li>
-                                                <li>1+ Years Experience</li>
+                                                <li>Опыт:</li>
+                                                {% if jobs.experience %}
+                                                <li>{{jobs.experience}}</li>
+                                                {% else %}
+                                                <li>Неизвестно</li>
+                                                {% endif %}
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="jp_listing_right_bar_btn_wrapper">
                                         <div class="jp_listing_right_bar_btn">
                                             <ul>
-                                                <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;Apply With Facebook</a></li>
-                                                <li><a href="#"><i class="fa fa-plus-circle"></i> &nbsp;Apply NOw!</a></li>
+                                                <li><a href="{% url 'cv'%}"><i class="fa fa-plus-circle"></i>Подать Заявку</a></li>
+                                                <li><a href="{% url 'jobs' %}"><i ></i>Посмотреть другие ваканции</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1089,16 +679,6 @@ Purchase:
     </div>
     <!-- jp footer Wrapper End -->
     <!--main js file start-->
-    <script src="js/jquery_min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.menu-aim.js"></script>
-    <script src="js/jquery.countTo.js"></script>
-    <script src="js/jquery.inview.min.js"></script>
-    <script src="js/owl.carousel.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/jquery.magnific-popup.js"></script>
-    <script src="js/custom_II.js"></script>
-    <!--main js file end-->
     <script>
         function initMap() {
         	var uluru = {lat: -36.742775, lng:  174.731559};
@@ -1113,8 +693,4 @@ Purchase:
         	});
         	}
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmdG8C6ItElq5ipuFv6O9AE48wyZm_vqU&callback=initMap">
-    </script>
-</body>
-
-</html>
+{%endblock%}
